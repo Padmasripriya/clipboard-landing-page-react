@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
+* {
+  box-sizing: border-box; /* defines how the width and height are calculated, should they include padding and border or not */
+}
+
 html,body {
   width: 100%;
   height: 100%;

@@ -1,9 +1,10 @@
 import React from "react";
+import DevicesImage from "../Images/image-devices.png"
 
 export function ImageModule() {
     return(
-        <div>
-            <img src="/image-devices.png" alt="devices image" />
+        <div className="image-module">
+            <img src={DevicesImage} alt="devices image" />
         </div>
     );
 }
