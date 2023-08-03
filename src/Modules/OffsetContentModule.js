@@ -8,12 +8,12 @@ export function OffsetContentModule() {
                <img src={ComputerImage} alt="computer image" />
            </div> 
            <div className="offset-content-right">
-               <h3>Quick Search</h3>
-               <p>Easily search your snippets by content, category, web address, application, and more.</p>
-               <h3>iCloud Sync</h3>
-               <p>Instantly saves and syncs snippets across all your devices.</p>
-               <h3>Complete History</h3>
-               <p>Retrieves any snippets from the first moment you started using the app.</p>
+               <h3 className="fw-bold mt-5">Quick Search</h3>
+               <p className="px-4 px-md-0">Easily search your snippets by content, category, web address, application, and more.</p>
+               <h3 className="fw-bold">iCloud Sync</h3>
+               <p className="px-4 px-md-0">Instantly saves and syncs snippets across all your devices.</p>
+               <h3 className="fw-bold">Complete History</h3>
+               <p className="px-4 px-md-0">Retrieves any snippets from the first moment you started using the app.</p>
            </div> 
         </div>
     );

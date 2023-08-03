@@ -13,7 +13,7 @@ import './fonts.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="clipboard-landing-page">
       <HeroHeaderModule />
       <FirstSectionTitleContentModule />
       <OffsetContentModule />

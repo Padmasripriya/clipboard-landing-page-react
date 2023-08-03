@@ -1,3 +1,6 @@
+/* Mobile first means designing for smaller screens first then for other screens - best way since the users are more on mobiles*/
+/* Responsive - making a page responsive means the page working on all the screen sizes */
+
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
 * {
@@ -7,8 +10,98 @@
 html,body {
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 
-body,h3,p {
+body,h3,p,button {
   font-family: 'Bai Jamjuree';
 }
+
+.clipboard-landing-page {
+  padding: 0;
+  text-align: center;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  margin: 40px;
+}
+
+.hero-header-module {
+  background: url('Images/bg-header-mobile.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.offset-content-module .offset-image-left img {
+  width: 300px;
+}
+
+.image-module img {
+  width: 300px;
+}
+
+.ios-download-button {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree';
+  color: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 30px;
+  background: hsl(171, 66%, 44%);
+  border: 1px solid hsl(171, 66%, 44%);
+}
+
+.mac-download-button {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree';
+  color: white;
+  padding: 10px;
+  width: 300px;
+  border-radius: 30px;
+  background: hsl(233, 100%, 69%);
+  border: 1px solid hsl(233, 100%, 69%);
+}
+
+.offset-content-module, .image-module, .three-column-module, .logos-module, .fourth-section-title-content, .footer-module .social-links {
+  margin-bottom: 100px;
+}
+
+.second-section-title-content {  
+  margin-bottom: 70px;
+}
+
+.logos-module .logo {
+  width: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-header-module {
+    background-image: url('Images/bg-header-desktop.png');
+  }
+
+  .ios-download-button {
+    margin-right: 1rem;
+  }
+
+  .offset-content-module {
+    display: flex;
+    gap: 70px;
+  }
+
+  .offset-content-module .offset-image-left img {
+    width: auto;
+    margin-left: -31px;
+  }
+
+  .offset-content-right {
+    text-align: left;
+    padding: 10px;
+  }
+
+}
+
