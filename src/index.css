@@ -13,8 +13,28 @@ html,body {
   padding: 0;
 }
 
-body,h3,p,button {
+body, h3, p, button, ul, li {
   font-family: 'Bai Jamjuree';
+}
+
+p, li, a {
+  color: hsl(201, 11%, 66%) !important;
+}
+
+ul {
+  padding: 0 37px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: hsl(171, 66%, 44%) !important;
 }
 
 .clipboard-landing-page {
@@ -79,7 +99,38 @@ body,h3,p,button {
   width: 100px;
 }
 
-@media only screen and (min-width: 768px) {
+.three-column-module .row {
+  display: block;
+}
+
+.three-column-module .row .col {
+  margin-bottom: 50px;
+}
+
+.footer-module {
+  background: hsl(201deg 11% 66% / 11%);
+}
+
+.footer-module .social-links svg:hover path {
+  cursor: pointer;
+  fill: hsl(171, 66%, 44%) !important;
+}
+
+.ios-download-button:hover {
+  background: hsl(171deg 66% 44% / 70%);
+  border: hsl(171deg 66% 44% / 70%);
+}
+
+.mac-download-button:hover {
+  background: hsl(233deg 100% 69% / 71%);
+  border: hsl(233deg 100% 69% / 71%);
+}
+
+.footer-module .social-links svg {
+  width: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
   .hero-header-module {
     background-image: url('Images/bg-header-desktop.png');
   }
@@ -101,6 +152,64 @@ body,h3,p,button {
   .offset-content-right {
     text-align: left;
     padding: 10px;
+  }
+
+  .image-module img {
+    width: auto;
+  }
+
+  .three-column-module .row {
+    display: flex;
+  }
+
+  .logos-module { 
+    display: inline-flex;
+  }
+
+  .logos-module .row .col {
+    padding: 0 50px;
+  }
+
+  .footer-module {
+    display: flex;
+  }
+
+  .footer-module .icon {
+    padding: 2%;
+  }
+
+  .footer-module .icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-module .faq-contact {
+    text-align: left;
+    padding-top: 66px;
+    padding-right: 30px;
+  }
+
+  .footer-module .privacy-press {
+    text-align: left;
+    padding-top: 66px;
+    padding-right: 30px;
+  }
+
+  .footer-module .install-guide {
+    text-align: left;
+    padding-top: 66px;
+    padding-right: 30px;
+  }
+
+  .footer-module .social-links {
+    text-align: left;
+    padding-top: 66px;
+    padding-right: 30px;
+    padding-left: 35%;
+  }
+
+  .footer-module .social-links svg {
+    width: 50px;
   }
 
 }
